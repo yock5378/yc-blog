@@ -1,0 +1,39 @@
+{
+  "name": "yc-blog",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "concurrently  \"cd json-server && start-server.bat\"  \"vite\"",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "eslint": "eslint {src}/**/*.{vue,ts,tsx,js,jsx} --fix",
+    "prettier": "prettier {src}/**/*.{html,vue,css,sass,scss,ts,tsx,js,jsx,md} --write"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.13",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.38",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "autoprefixer": "^10.4.7",
+    "concurrently": "^7.2.1",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.1.0",
+    "postcss": "^8.4.14",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-eslint-parser": "^9.0.2",
+    "vue-tsc": "^0.34.7"
+  }
+}
