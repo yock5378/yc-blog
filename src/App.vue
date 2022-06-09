@@ -1,5 +1,6 @@
 <template>
-  <router-view></router-view>
+  <router-view name="Sidebar" />
+  <router-view />
 </template>
 
 <script setup lang="ts"></script>

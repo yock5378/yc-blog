@@ -1,21 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import store from '@/store';
 import HelloWorld from '@/components/HelloWorld.vue';
-import DefaultLayout from '@/layout/DefaultLayout.vue';
+import Sidebar from '@/components/Sidebar.vue';
 
 const routes = [
   {
     path: '/',
-    layout: DefaultLayout,
-    component: DefaultLayout,
+    components: {
+      default: HelloWorld,
+      Sidebar,
+    },
   },
   {
     path: '/mountain',
-    component: HelloWorld,
+    components: {
+      default: HelloWorld,
+      Sidebar,
+    },
   },
   {
     path: '/food',
-    component: HelloWorld,
+    components: {
+      default: HelloWorld,
+      Sidebar,
+    },
   },
 ];
 

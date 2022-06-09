@@ -31,6 +31,12 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 
 [https://vuex.vuejs.org/zh/guide/typescript-support.html#usestore-%E7%BB%84%E5%90%88%E5%BC%8F%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E](https://vuex.vuejs.org/zh/guide/typescript-support.html#usestore-%E7%BB%84%E5%90%88%E5%BC%8F%E5%87%BD%E6%95%B0%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E)
 
+## FortAwesome
+
+[https://github.com/FortAwesome/vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome)
+
+[https://penueling.com/%E7%B7%9A%E4%B8%8A%E5%AD%B8%E7%BF%92/vue3-%E4%BD%BF%E7%94%A8-fontawsome-%E5%85%8D%E8%B2%BB-icon-font/](https://penueling.com/%E7%B7%9A%E4%B8%8A%E5%AD%B8%E7%BF%92/vue3-%E4%BD%BF%E7%94%A8-fontawsome-%E5%85%8D%E8%B2%BB-icon-font/)
+
 # Fake API
 
 ## Json Server
