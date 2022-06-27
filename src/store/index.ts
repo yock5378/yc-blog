@@ -1,22 +1,21 @@
-import { InjectionKey } from 'vue';
-import { createStore, useStore as baseUseStore, Store } from 'vuex';
-import layout, { LayoutState } from '@/store/modules/layout';
-
-export interface State {
+import layout, {
+  State as LayoutState,
+  LayoutStore,
+} from '@/store/modules/layout';
+import { createStore } from 'vuex';
+export type RootState = {
   layout: LayoutState;
-}
+};
 
-export const key: InjectionKey<Store<State>> = Symbol();
+export type Store = LayoutStore<Pick<RootState, 'layout'>>;
 
-export function useStore() {
-  return baseUseStore(key);
-}
-
-const store = createStore<State>({
+const store = createStore({
   modules: {
     layout,
   },
-  state: {} as State,
 });
-
 export default store;
+
+export function useStore(): Store {
+  return store as Store;
+}

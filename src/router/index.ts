@@ -1,13 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import store from '@/store';
-import HelloWorld from '@/components/HelloWorld.vue';
+// import store from '@/store';
 import Sidebar from '@/components/Sidebar.vue';
+import Home from '@/pages/Home.vue';
+import HelloWorld from '@/components/HelloWorld.vue';
 
 const routes = [
   {
     path: '/',
     components: {
-      default: HelloWorld,
+      default: Home,
       Sidebar,
     },
   },

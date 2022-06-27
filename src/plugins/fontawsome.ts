@@ -1,4 +1,9 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faMountainSun, faUtensils } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars,
+  faClose,
+  faMountainSun,
+  faUtensils,
+} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faMountainSun, faUtensils);
+library.add(faBars, faClose, faMountainSun, faUtensils);
