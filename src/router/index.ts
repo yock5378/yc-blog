@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 // import store from '@/store';
 import Sidebar from '@/components/Sidebar.vue';
 import Home from '@/pages/Home.vue';
-import HelloWorld from '@/components/HelloWorld.vue';
+import Mountain from '@/pages/Mountain.vue';
+import Food from '@/pages/Food.vue';
 
 const routes = [
   {
@@ -15,14 +16,14 @@ const routes = [
   {
     path: '/mountain',
     components: {
-      default: HelloWorld,
+      default: Mountain,
       Sidebar,
     },
   },
   {
     path: '/food',
     components: {
-      default: HelloWorld,
+      default: Food,
       Sidebar,
     },
   },

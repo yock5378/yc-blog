@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="device === 'desktop' || isSidebarShow"
-    class="fixed bg-slate-800 bg-opacity-100 md:bg-opacity-80 h-full w-full md:w-1/3 lg:w-1/4"
+    class="fixed z-10 h-full w-full md:w-1/3 lg:w-1/4 bg-slate-800 bg-opacity-100 md:bg-opacity-80"
   >
     <div class="flex flex-col items-center text-gray-200 text-3xl">
       <div class="px-6 py-3 md:mb-28 mt-16 md:mt-0">
@@ -27,11 +27,11 @@
   </div>
   <div
     v-if="device === 'desktop'"
-    class="flex-none h-full w-full md:w-1/3 lg:w-1/4"
+    class="flex-none z-10 h-full w-full md:w-1/3 lg:w-1/4"
   ></div>
   <button
     v-if="device === 'mobile'"
-    class="fixed top-6 right-6 rounded-full h-10 w-10 bg-gray-200 text-green-600"
+    class="fixed z-10 top-6 right-6 rounded-full h-10 w-10 bg-gray-200 text-green-600"
     @click="setSidebarShow()"
   >
     <font-awesome-icon

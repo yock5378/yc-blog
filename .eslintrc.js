@@ -4,14 +4,14 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
-    'vue/setup-compiler-macros': true
+    'vue/setup-compiler-macros': true,
   },
   extends: [
     'eslint:recommended',
     'plugin:prettier/recommended',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
-    '@vue/eslint-config-prettier'
+    '@vue/eslint-config-prettier',
   ],
   plugins: ['vue', 'html', '@typescript-eslint', 'prettier'],
   parser: 'vue-eslint-parser',
@@ -27,17 +27,17 @@ module.exports = {
     'vue/no-multiple-template-root': 'off',
     'vue/multi-word-component-names': 'off',
     'no-mutating-props': 'off',
-    'vue/no-v-html': 'off'
+    'vue/no-v-html': 'off',
   },
   overrides: [
     {
       files: [
         '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)'
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
       ],
       env: {
-        mocha: true
-      }
-    }
-  ]
+        mocha: true,
+      },
+    },
+  ],
 };
