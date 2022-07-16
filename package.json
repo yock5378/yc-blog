@@ -6,8 +6,8 @@
     "dev": "concurrently  \"cd json-server && start-server.bat\"  \"vite\"",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "eslint": "eslint {src}/**/*.{vue,ts,tsx,js,jsx} --fix",
-    "prettier": "prettier {src}/**/*.{html,vue,css,sass,scss,ts,tsx,js,jsx,md} --write"
+    "eslint": "eslint --ext .vue,.ts,.tsx,.js,.jsx src/ --fix",
+    "prettier": "prettier ./src/**/*.{html,vue,css,sass,scss,ts,tsx,js,jsx,md} --write"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
